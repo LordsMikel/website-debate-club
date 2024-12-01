@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participa en Cáceres</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-city"></i> Participa en Cáceres</h1>
+    </header>
+    <main>
+        <!-- Encuesta Ciudadana -->
+        <section id="encuesta">
+            <h2>¿Qué te gustaría cambiar en Cáceres?</h2>
+            <p>
+                <strong>¿Sabías que hay una razón detrás de esta pregunta?</strong> 
+                Estamos construyendo un futuro mejor para nuestra ciudad. 
+                <a href="index.html" class="cta-link">¡Descubre por qué!</a>
+            </p>
+
+            <form id="formEncuesta" action="https://formspree.io/f/xblrbdkl" method="POST">
+                <label for="nombre">¿Cómo te llamas?</label>	
+                <textarea id="nombre" name="nombre" placeholder="Escribe aquí..." required></textarea>
+            
+                <label for="edad">¿Cuál es tu edad?</label>
+                <textarea id="edad" name="edad" placeholder="Escribe aquí..." required></textarea>
+            
+                <label for="barrio">¿En qué barrio de Cáceres vives?</label>
+                <textarea id="barrio" name="barrio" placeholder="Escribe aquí..." required></textarea>
+            
+                <label for="problema">¿Cuál es el principal problema que ves en Cáceres?</label>
+                <textarea id="problema" name="problema" placeholder="Escribe aquí..." required></textarea>
+            
+                <label for="mejoras">¿Qué mejorarías en tu barrio?</label>
+                <textarea id="mejoras" name="mejoras" placeholder="Escribe aquí..." required></textarea>
+            
+                <label for="propuestas">¿Qué te gustaría proponer para Cáceres?</label>
+                <textarea id="propuestas" name="propuestas" placeholder="Escribe aquí..." required></textarea>
+            
+                <label for="gestion">¿Crees que la gestión de Cáceres es adecuada?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gestion" value="Sí" required> Sí
+                    </label>
+                    <label>
+                        <input type="radio" name="gestion" value="No"> No
+                    </label>
+                </div>
+            
+                <label>¿Te gustaría que contactemos contigo para debatir estas ideas?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="contacto" value="Sí" onclick="toggleCorreo(true)"> Sí
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto" value="No" onclick="toggleCorreo(false)"> No
+                    </label>
+                </div>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo o usuario de insta o twitter" style="display: none;">
+            
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar Encuesta</button>
+            </form>
+        </section>
+
+        <!-- Club de Debate -->
+        <section id="club-debate">
+            <h2>Únete al Club de Debate de Cáceres</h2>
+            <p>Un espacio para debatir ideas, proponer soluciones y construir una Cáceres mejor. ¡Tus ideas cuentan!</p>
+            <button onclick="window.location.href='debate.html';"><i class="fas fa-user-plus"></i> Regístrate o Infórmate</button>
+        </section>
+    </main>
+
+
+    </main>
+    <footer>
+        <p style="color: white;"> 
+            © 2024 Participa en Cáceres - Diseñado por 
+            <a href="https://www.linkedin.com/in/miguel-medina-cantos/" target="_blank" style="color: #FFD54F; text-decoration: underline; font-weight: bold;">
+                Miguel Medina Cantos
+            </a>, Premiado en IA 2024 - Cáceres, España 
+            <i class="fas fa-city"></i>
+        </p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

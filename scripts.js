@@ -10,3 +10,6 @@ function toggleCorreo(show) {
         correoField.value = ''; // Limpia el campo si estaba visible
     }
 }
+
+
+
