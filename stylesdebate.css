@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts and Colors */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    color: #333;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+header {
+    background: #66bb6a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+}
+
+header i {
+    margin-right: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #66bb6a;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+section p, section article p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+section article {
+    background: #e8f5e9;
+    padding: 15px;
+    border-left: 4px solid #66bb6a;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+article h3 {
+    color: #338a3e;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+/* Call-to-action Buttons */
+.cta-button {
+    display: inline-block;
+    background: #66bb6a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: #338a3e;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #66bb6a;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #c5e1a5;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e8f5e9;
+}
