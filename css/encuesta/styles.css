@@ -142,7 +142,6 @@ footer i {
     margin-left: 5px;
 }
 
-
 /* Destacar el texto */
 section#encuesta p {
     font-size: 1.2em;
@@ -167,7 +166,6 @@ section#encuesta p {
     color: #e08b00;
 }
 
-
 .hidden {
     display: none;
 }
@@ -184,7 +182,6 @@ section#encuesta p {
     border-radius: 5px;
     resize: vertical;
 }
-
 
 /* Estilo para el párrafo de términos y condiciones */
 .terms-text {
@@ -203,4 +200,48 @@ section#encuesta p {
 .terms-text a:hover {
     text-decoration: underline;
     color: #388E3C; /* Verde más oscuro al pasar el cursor */
+}
+
+/* Media Queries */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    header {
+        font-size: 1.8em;
+        padding: 15px;
+    }
+    main {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    form textarea, form input[type="email"] {
+        font-size: 0.9em;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        font-size: 2em;
+        padding: 18px;
+    }
+    main {
+        padding: 18px;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    form textarea, form input[type="email"] {
+        font-size: 1em;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px 18px;
+    }
 }
