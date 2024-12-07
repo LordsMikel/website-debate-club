@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts and Colors */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6e6, #fffcf2);
+    color: #333;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+header {
+    background: #f8b400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #e65100;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section p {
+    color: #424242;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #e65100;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #f8b400;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #e65100;
+}
+
+button {
+    background: #f8b400;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e65100;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f8b400;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
