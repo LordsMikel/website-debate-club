@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Participa en Cáceres</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/encuesta/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,12 +33,13 @@
                 <label for="barrio">¿En qué barrio de Cáceres vives?</label>
                 <textarea id="barrio" name="barrio" placeholder="Escribe aquí..." required></textarea>
             
-                <label for="problema">¿Cuál es el principal problema que ves en Cáceres?</label>
-                <textarea id="problema" name="problema" placeholder="Escribe aquí..." required></textarea>
-            
                 <label for="mejoras">¿Qué mejorarías en tu barrio?</label>
                 <textarea id="mejoras" name="mejoras" placeholder="Escribe aquí..." required></textarea>
             
+                <label for="problema">¿Cuál es el principal problema que ves en Cáceres?</label>
+                <textarea id="problema" name="problema" placeholder="Escribe aquí..." required></textarea>
+            
+ 
                 <label for="propuestas">¿Qué te gustaría proponer para Cáceres?</label>
                 <textarea id="propuestas" name="propuestas" placeholder="Escribe aquí..." required></textarea>
             
@@ -47,9 +49,14 @@
                         <input type="radio" name="gestion" value="Sí" required> Sí
                     </label>
                     <label>
-                        <input type="radio" name="gestion" value="No"> No
+                        <input type="radio" name="gestion" value="No" required> No
                     </label>
                 </div>
+                <div id="explanation" class="hidden">
+                    <p id="response-text"></p>
+                    <textarea id="new-response" name="newResponse" placeholder="Escribe tu explicación aquí..."></textarea>
+                </div>
+                
             
                 <label>¿Te gustaría que contactemos contigo para debatir estas ideas?</label>
                 <div class="radio-group">
@@ -63,6 +70,15 @@
                 <input type="email" id="correo" name="correo" placeholder="Tu correo o usuario de insta o twitter" style="display: none;">
             
                 <button type="submit"><i class="fas fa-paper-plane"></i> Enviar Encuesta</button>
+          
+                    <!-- Texto sobre términos y condiciones -->
+                <p class="terms-text">
+                    Al enviar este formulario, confirmas que has leído y aceptas nuestros 
+                    <a href="terminos.html" target="_blank">términos y condiciones</a>.
+                </p>
+
+          
+          
             </form>
         </section>
 
@@ -85,6 +101,5 @@
             <i class="fas fa-city"></i>
         </p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>

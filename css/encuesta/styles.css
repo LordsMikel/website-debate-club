@@ -74,6 +74,7 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -167,3 +168,39 @@ section#encuesta p {
 }
 
 
+.hidden {
+    display: none;
+}
+
+#explanation {
+    margin-top: 10px;
+}
+
+#new-response {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+
+/* Estilo para el párrafo de términos y condiciones */
+.terms-text {
+    font-size: 1em; /* Tamaño de fuente legible */
+    color: #333; /* Color de texto oscuro */
+    margin-top: 20px; /* Separación del contenido anterior */
+    text-align: justify; /* Alineación para mejorar la lectura */
+}
+
+.terms-text a {
+    color: #4CAF50; /* Color verde para resaltar el enlace */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms-text a:hover {
+    text-decoration: underline;
+    color: #388E3C; /* Verde más oscuro al pasar el cursor */
+}

@@ -162,3 +162,56 @@ ul li i {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 0.9em; /* Texto un poco más pequeño */
+    }
+
+    header {
+        font-size: 1.5em; /* Reduce el tamaño del título */
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        box-shadow: none; /* Quita sombras que puedan parecer excesivas en pantallas pequeñas */
+    }
+
+    section h2 {
+        font-size: 1.5em; /* Reduce el tamaño de los encabezados */
+    }
+
+    section p, ul li {
+        font-size: 1em; /* Texto más pequeño para facilitar la lectura */
+    }
+
+    ul li i {
+        font-size: 1.2em; /* Iconos más pequeños */
+    }
+
+    article {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .museum-image, .plaza-image {
+        max-width: 100%; /* Permite que las imágenes se ajusten al contenedor */
+        border-radius: 5px; /* Reduce las esquinas redondeadas */
+    }
+
+    footer {
+        font-size: 0.8em; /* Reduce el tamaño del texto del pie */
+        padding: 10px;
+    }
+}

@@ -3,7 +3,7 @@ const sliders = document.querySelectorAll('.slide-in');
 
 // Configuración del Intersection Observer
 const observerOptions = {
-    threshold: 0.2 // 20% del elemento visible para activarlo
+    threshold: 0.24// 20% del elemento visible para activarlo
 };
 
 // Función de callback
