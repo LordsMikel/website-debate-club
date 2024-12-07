@@ -202,6 +202,17 @@ section#encuesta p {
     color: #388E3C; /* Verde más oscuro al pasar el cursor */
 }
 
+
+iframe {
+    border: none;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 800px; /* Evita que sea demasiado ancho */
+    height: 100vh; /* Usa toda la altura de la ventana */
+    overflow: hidden; /* Elimina el contenido que desborde */
+    margin: 20px auto;
+    display: block; /* Centra el iframe */
+}
+
 /* Media Queries */
 
 /* Para pantallas pequeñas (móviles) */
@@ -218,6 +229,15 @@ section#encuesta p {
         font-size: 1em; /* Tamaño del icono más pequeño */
         margin-right: 8px;
     }
+
+    iframe {
+        width: 95%; /* Ocupa casi todo el ancho del móvil */
+        height: 500px; /* Reduce la altura para pantallas pequeñas */
+        overflow: hidden; /* Evita desbordamientos */
+        margin: 20px auto; /* Centra el iframe */
+        display: block; /* Asegura que esté centrado */
+    }
+
 }
 
 /* Para pantallas medianas (tabletas) */
@@ -233,4 +253,12 @@ section#encuesta p {
         font-size: 1.2em; /* Tamaño del icono más pequeño */
         margin-right: 10px;
     }
+    iframe {
+        width: 90%; /* Ajusta el ancho al tamaño de la tableta */
+        height: 550px; /* Altura ligeramente menor que en escritorio */
+    }
+
 }
+
+
+
