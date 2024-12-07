@@ -207,41 +207,30 @@ section#encuesta p {
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
     header {
-        font-size: 1.8em;
-        padding: 15px;
+        font-size: 1.5em; /* Tamaño más pequeño del texto */
+        padding: 10px; /* Menos espacio interno */
     }
-    main {
-        padding: 15px;
+    header h1 {
+        font-size: 1.2em; /* Ajusta el tamaño del encabezado */
+        line-height: 1.4; /* Mejora la legibilidad */
     }
-    h2 {
-        font-size: 1.5em;
-    }
-    form textarea, form input[type="email"] {
-        font-size: 0.9em;
-    }
-    button {
-        font-size: 0.9em;
-        padding: 8px 15px;
+    header i {
+        font-size: 1em; /* Tamaño del icono más pequeño */
+        margin-right: 8px;
     }
 }
 
 /* Para pantallas medianas (tabletas) */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
-        font-size: 2em;
-        padding: 18px;
+        font-size: 1.8em;
+        padding: 15px; /* Espaciado intermedio */
     }
-    main {
-        padding: 18px;
+    header h1 {
+        font-size: 1.6em; /* Ajuste para tablets */
     }
-    h2 {
-        font-size: 1.7em;
-    }
-    form textarea, form input[type="email"] {
-        font-size: 1em;
-    }
-    button {
-        font-size: 1em;
-        padding: 10px 18px;
+    header i {
+        font-size: 1.2em; /* Tamaño del icono más pequeño */
+        margin-right: 10px;
     }
 }
